@@ -1,27 +1,43 @@
-# CurrencyConverter
+# ts_angular_currency_converter
+ my first ts angular prjoect
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+# 1. Цель проекта
 
-## Development server
+ Главная задача моего проекта - это создать удобное приложение, с помощью которого можно будет отслеживать и переводить курс валют различных стран.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# 2. Описание функционала проекта:
 
-## Code scaffolding
+  * Регистрация пользователей(форма авторизации)
+  * Разделение функционала для зарегистрированных пользователей и зрителей
+  * Стартовая геопозиция зрителя
+  * График валютных пар
+  * Таймфреймы
+  * Инструменты для работы **(для зарегистрирвоанных пользователей)**
+  * Выбор "Любимых валют" **(для зарегистрирвоанных пользователей)**
+  * Уведомления **(для зарегистрирвоанных пользователей)**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# 2.1 Пользователи
 
-## Build
+ Контент будет и доступные инструменты для удобного просмотра будет отличаться. Для зарегистрированных пользователей будет больше контента соответственно
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# 2.2 Форма авторизации(Регистрация, аутентификация и авторизация)
+ 
+ * Если не зарегистрирован, будет предложение с регистрацией, если отклоняет, может пользоваться в режиме зрителя.
+ * Рега осуществляется по: E-mail, пароль, контактные данные.
+ * Если зарегистрирован, вход через E-mail + пароль.
+# 2.3 Геопозиция
+ 
+ Хочу поэкспериментировать и сделать так, чтоб ему автоматически предлагали ту страну, где он осуществляет просмотр валютной пары в виде:(Валюта, определенная его  местоположением, и USD(к примеру)). Т.е. Я сейчас нахожусь в России => (RUB|USD), если в Казахстане => (KZT|USD)
+# 2.4 График
+ График с некоторым функционалом(еще не определился) и таймфреймом
+ 
+# 2.5 Контент для зарегистрированных пользователей
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ `Вероятнее, в дальшейшем будет пополняться список моих желаний.`
+ * Инструментры для работы с графиком - это типичные инструменты трейдеров для осуществления прогнозов и сборки метаданных.
+ * "Любимая валюта" - выбор избранной валюты для быстрого поиска
+ * Уведомаления о новостях, резкое повышение или понижение курса (в процентах)
+ 
+# 3. Стек технологий:
+ 
+TS,Angular,git,figma,scss,различные открытые api
